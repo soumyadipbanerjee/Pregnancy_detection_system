@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregnancy Detection System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Pregnancy Detection System</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <h2>Answer the following questions:</h2>
+            <ol>
+                <li>
+                    <label for="missed-period">Have you missed your period?</label>
+                    <input type="radio" name="missed-period" value="yes"> Yes
+                    <input type="radio" name="missed-period" value="no"> No
+                </li>
+                <li>
+                    <label for="symptoms">Are you experiencing pregnancy symptoms?</label>
+                    <input type="radio" name="symptoms" value="yes"> Yes
+                    <input type="radio" name="symptoms" value="no"> No
+                </li>
+                <li>
+                    <label for="pregnancy-test">Have you taken a pregnancy test?</label>
+                    <input type="radio" name="pregnancy-test" value="yes"> Yes
+                    <input type="radio" name="pregnancy-test" value="no"> No
+                </li>
+            </ol>
+            <button type="button" id="submit-button">Submit</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Result:</h2>
+            <p id="result-text"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
